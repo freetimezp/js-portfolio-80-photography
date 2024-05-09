@@ -1,5 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: "WanoQuin";
+    src: url("../fonts/WanoQuin-ExtraBold.otf");
+}
+
+body {
+    color: #fff;
+    font-family: "Lato", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+}
+
+.navbar span {
+    height: 2px;
+    width: 50px;
+    background: linear-gradient(90deg, transparent, #fff);
+    position: absolute;
+    bottom: 0;
+    animation: animate 5s infinite linear;
+}
+
+@keyframes animate {
+    0% {
+        left: 0;
+        transform: translate(-100%);
+    }
+    100% {
+        left: 100%;
+        transform: translate(0%);
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    text-transform: capitalize;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: WanoQuin;
+}
+
+.menu {
+    display: flex;
+    gap: 5rem;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.menu a {
+    font-size: 18px;
+}
+
+.btn {
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.btn:hover {
+    scale: 1.2;
+}
+
+.video-section video {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.img-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
